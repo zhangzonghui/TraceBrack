@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.mycleanapplication.MainActivity" >
+
+       <com.tempus.traceback.ActionbarView
+        android:id="@+id/setting_actionbar"
+        style="@style/ActionBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitesmoke" />
+     
+      
+         
+          
+         <LinearLayout 
+           android:id="@+id/line_nfc" 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" 
+           android:weightSum="5" 
+           android:orientation="horizontal"
+           android:gravity="center_horizontal"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="15dp"
+           >
+             <TextView 
+             android:id="@+id/longin_out"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+             android:text="@string/login_out"
+             android:textSize="25sp"
+             android:textColor="@color/red"
+             android:layout_weight="3"
+             android:background="@drawable/circulor_textview_onclic"
+             android:gravity="center_horizontal"
+              />
+          </LinearLayout> 
+          
+          
+          
+         
+             
+         
+   
+     
+     
+     
+     
+     
+</RelativeLayout>

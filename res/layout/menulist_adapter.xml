@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    
+    <ImageView 
+      android:id="@+id/icion_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      android:src="@drawable/ic_launcher"
+        />
+    <TextView 
+      android:id="@+id/control_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="zhangzonghui"
+      android:textSize="20sp"
+      android:textColor="@color/white"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="10dp"
+    />
+            
+    
+   
+        
+
+</LinearLayout>
+<!-- 这个list布局文件会在ListFragment中用到。 -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+   <com.tempus.traceback.ActionbarView
+        android:id="@+id/main_actionbar"
+        style="@style/ActionBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitesmoke" />
+   
+   <TextView 
+       android:id="@+id/account"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:hint="@string/phone_num"
+      />
+   
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       >
+       
+      
+       
+       <TextView 
+         android:id="@+id/timing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="0"
+         android:textSize="15sp"
+         android:padding="10dp"
+         android:layout_centerVertical="true"
+         android:background="@drawable/circulor_textview"
+         android:layout_alignParentRight="true"
+         />
+       
+        <EditText
+        android:id="@+id/register_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/check_num_print"
+        android:layout_toLeftOf="@+id/timing"
+         android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/circulor_textview_onclic"
+       />
+       
+   </RelativeLayout>
+   
+   <Button 
+       android:id="@+id/check_btn"
+       android:layout_width="fill_parent"        
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginLeft="20dp"
+       android:text="@string/sure_btn"
+     />
+   
+  
+  
+  
+      
+
+</LinearLayout>

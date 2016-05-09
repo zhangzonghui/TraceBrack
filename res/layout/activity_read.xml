@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ReadActivity" >
+    
+    <com.tempus.traceback.ActionbarView
+        android:id="@+id/read_actionbar"
+        style="@style/ActionBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitesmoke" />
+
+    <TextView
+        android:id="@+id/ifo_NFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="@string/near_device" 
+        />
+    
+    
+    <WebView 
+       android:id="@+id/line_nfc" 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"  
+       android:layout_below="@+id/read_actionbar"
+      />
+
+    <!--  <LinearLayout   
+           android:id="@+id/line_nfc" 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" 
+           android:weightSum="3" 
+           android:orientation="vertical"
+           android:layout_below="@+id/read_actionbar"
+        >
+        
+         <RelativeLayout 
+           android:id="@+id/goods_detail"  
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="@color/mid_grey"
+          >
+             
+              <TextView 
+              android:id="@+id/goods_sec"  
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/goods_security"
+              android:textSize="20sp"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="5dp"
+              android:textColor="@color/black"
+              />
+              
+              
+             
+             <ImageView 
+                android:id="@+id/goods_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                 />
+             
+             <TextView 
+              android:id="@+id/goods_name"  
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="kkkkkss"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@+id/goods_img"
+              android:layout_marginLeft="15dp"
+              android:textSize="20dp"
+              />
+             
+             <TextView 
+              android:id="@+id/goods_result"  
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/goods_sec_result"
+              android:textSize="20sp"
+              android:gravity="center_horizontal"
+              android:layout_alignParentBottom="true"
+              android:layout_marginBottom="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              />
+             
+         </RelativeLayout>
+         
+         <RelativeLayout 
+           android:id="@+id/goods_positions"  
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="2"
+           android:orientation="vertical"
+          
+             >
+             
+             <TextView 
+              android:id="@+id/positions_title"  
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/goods_tadce"
+              android:textSize="20sp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:gravity="center_horizontal"
+              android:textColor="@color/black"
+              android:background="@color/goods_position_background"
+              />
+             <LinearLayout 
+                 android:id="@+id/luxian_line"
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_below="@+id/positions_title"
+                 >
+                 <TextView 
+                     android:id="@+id/ss"
+                     android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                     />
+             </LinearLayout>
+         </RelativeLayout>
+         
+   </LinearLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_size"
+    android:layout_gravity="center_vertical"
+    android:background="@color/actionbar_color">
+
+    <ImageButton
+        android:id="@+id/actionbar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/actionbar_text_padding_left"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title_size"/>
+
+    <ImageButton
+        android:id="@+id/actionbar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/actionbar_text_padding_right"
+        android:background="@null"
+        android:visibility="gone" />
+    
+    <ImageButton
+        android:id="@+id/actionbar_right_second_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/actionbar_right_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/actionbar_text_padding_right"
+        android:background="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

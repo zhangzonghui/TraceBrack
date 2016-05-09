@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Traceback</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_title">防伪溯源</string>
+    <string name="main_erweima">二维码扫描</string>
+    <string name="main_nfc">NFC扫描</string>
+    <string name="nfc_title">NFC感应</string>
+    <string name="writenfc_title">写入标签</string>
+    <string name="capture_title">二维码扫描</string>
+    <string name="readActivity_nonfc">该设备不支持NFC</string>
+    <string name="readctivity_opennfc">请在系统设置中先启用NFC功能！</string>
+    <string name="readActiivty_showmessage">显示读取内容</string>
+    <string name="readActiivty_newmessage">新建标签</string>
+    <string name="error_nfcmessage">数据为空或不支持该数据格式</string>
+    <string name="write_nfcmessage_test">请输入需要写入的NFC数据</string>
+    <string name="start_writenfc">开始写入标签</string>
+    <string name="near_device">现在请将设备背面靠近标签</string>
+    <string name="no_message">请求标签防伪码失败</string>
+    <string name="write_message_sucess">数据写入成功!</string>
+     <string name="write_message_fail">数据写入失败!</string>
+    <string name="new_account_hint">QQ号/邮箱</string>
+    <string name="sure_btn">确定</string>
+    <string name="cancle_btn">取消</string>
+    <string name="check_num_print">请输入验证码</string>
+    <string name="phone_num">手机号</string>
+    <string name="passward">密码</string>
+    <string name="login">登录</string>
+    <string name="null_login_message">登录账号或密码不能为空</string>
+    <string name="login_error">登录失败</string>
+    <string name="net_error">网络异常</string>
+    <string name="intalling">正在加載中。。。。</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">输入商品名称</string>
+    <string name="no_input">输入为空或扫描结果为空</string>
+    <string name="search_fail">查询商品失败</string>
+    <string name="sure_good">商品确认</string>
+    <string name="getgoodlabel">获取商品标签中。。。。</string>
+    <string name="no_goods_lable">未选择商品</string>
+    <string name="no_goodName">商品名称为空</string>
+    <string name="goods_tadce">商品溯源</string>
+    <string name="goods_security">商品防伪</string>
+    <string name="goods_sec_result">经海捣网防伪系统检测该商品为原装正品</string>
+    <string name="no_goods_label">该商品还没导入标签，请在系统中导入</string>
+    <string name="write_label_sucess">写入的标签上传成功</string>
+    <string name="write_label_failed">写入的标签上传失败</string>
+    <string name="uploadgoodlabel">商品标签上传中。。。。</string>
+    <string name="no_goods_message">查询不到该商品</string>
+    <string name="fals_message">查询不该商品，可能为假冒商品</string>
+    <string name="login_out">退出登录</string>
+    <string name="setting">设置</string>
+     <string name="version">版本</string>
+    
+    
+    
+    
+    
+    
+</resources>

@@ -1,0 +1,100 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tempus.traceback"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.NFC" />  
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />   
+   <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+    <application
+        android:name="com.tempus.traceback.ThisApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >  
+        
+        
+        <activity
+            android:name="com.tempus.traceback.StartupActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor">"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tempus.traceback.SlidingMenuActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor">"
+        </activity>
+        
+        <activity
+            android:name="com.tempus.traceback.ResultActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        
+        <activity
+            android:name="com.tempus.traceback.CaptureActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.tempus.traceback.NfcActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+              <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+
+                <data android:mimeType="text/plain" >
+                </data>
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="com.tempus.traceback.ReadActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" ></action>
+                <category android:name="android.intent.category.DEFAULT" ></category>
+                 <data android:mimeType="text/plain" ></data>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.tempus.traceback.Write2Nfc" 
+                  android:launchMode="singleTop"
+            >
+	   </activity>
+	   
+        <activity
+            android:name="com.tempus.traceback.LoginActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        
+    </application>   
+
+</manifest>
